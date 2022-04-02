@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');</style>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <header>
+    <h1>Validate form in JavaScript</h1>
+    <p>Output an error message if any active errors or unfilled required fields. </p>
+    <p>If all is well and the form is “submitted”, output a high five.</p>
+    </header>
+
+    <main>
+      <form>
+    <div class="input-form">
+      <label for="email-form">Email:
+      <input type="email" name="email-form" id="email"></input>
+      <span class="error"></span>
+    </label>
+    </div>
+
+    <div class="input-form">
+      <label for="country-form">Country:</label>
+      <input type="text" name="country-form" id="country"></input>
+    </div>
+    
+    <div class="input-form">
+      <label for="postcode-form">PostCode:</label>
+      <input type="number" name="postcode-form" id="postcode"></input>
+    </div>
+
+    <div class="input-form">
+      <label for="password-form">Password:</label>
+      <input type="password" name="password-form" id="password"></input>
+    </div>
+    <div class="submit-form">
+      <button id="submit">Submit Form</button>
+    </div>
+</form>
+   
+
+    <footer>
+      <p id="output"></p>
+    </footer>
+  </main>
+  </body>
+  <script src="script.js" async="defer"></script>
+</html>
